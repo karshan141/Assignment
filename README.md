@@ -1,3 +1,4 @@
 # Assignment
 Pw skills lecture assignments
-https://github.com/karshan141/Assignment.git
+https://github.com/karsha
+https://karshan141.github.io/Assignment/
