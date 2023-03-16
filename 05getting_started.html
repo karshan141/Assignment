@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started Assignment</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #e8eaef;
+        }
+
+        .main-header {
+            text-align: center;
+            color: #163f60;
+            padding: 40px;
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-weight: 900;
+            line-height: 54px;
+        }
+
+        #wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            max-width: 1220px;
+            margin: 0 auto;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .question-answer {
+            width: 100%;
+        }
+
+        .question {
+            background-color: #163f60;
+            color: #fff;
+            letter-spacing: 1.2px;
+            font-size: 1.3rem;
+            padding: 20px 50px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .answer {
+            background-color: #fff;
+            padding: 20px 50px;
+        }
+
+        .answer p,
+        .answer li {
+            line-height: 23px;
+            letter-spacing: 0.8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Assignment Heading-->
+    <header class="main-header">
+        <h1>Getting Started Assignment</h1>
+    </header>
+    <div id="wrapper">
+        <!-- First Question-->
+        <section class="question-answer">
+            <h3 class="question">01. &nbsp; Why do we start learning a programming language with “Hello World!"?</h3>
+            <div class="answer">
+                <p>"Hello, World!" is a traditional first program that is often used as a simple introductory exercise
+                    for learning a new programming language. The reason for using this particular phrase is that it is a
+                    simple and well-known message that can be easily understood, even by people who have no prior
+                    experience with programming.</p>
+                <p>By creating a "Hello, World!" program, students can quickly learn the basic syntax of a new language
+                    and get a sense of how code is written and executed. It provides a way to test that the programming
+                    environment is set up correctly and that the basic mechanics of compiling and running a program work
+                    as expected.</p>
+                <p>Overall, "Hello, World!" is an easy and approachable way to introduce learners to a new programming
+                    language and help them build a foundation of basic programming concepts.</p>
+            </div>
+        </section>
+
+        <!--Secound Question-->
+        <section class="question-answer">
+            <h3 class="question">02. &nbsp; How is the use of comments and how do you write comments in HTML?</h3>
+            <div class="answer">
+                <p>In programming, comments are lines of text that are added to the code to provide explanations,
+                    documentation, or reminders to the developer who reads the code in the future. Comments are ignored
+                    by the computer when the code is executed, and they do not affect the output or behavior of the
+                    program.</p>
+                <p>In HTML, comments are created using the <b> <code>&lt;!--</code> and <code>--&gt;</code> </b> tags.
+                    Anything
+                    written between these tags will be considered as a comment and will not be displayed in the output.
+                </p>
+            </div>
+        </section>
+
+        <!--Third Question-->
+        <section class="question-answer">
+            <h3 class="question">03. &nbsp; What are elements, tags, and attributs and the differnce between them?</h3>
+            <div class="answer">
+                <ol>
+                    <li>Elements: An HTML element is a structural component of a webpage, such as a header, paragraph,
+                        or image. Each element is identified by an opening tag, which defines the type of element, and a
+                        closing tag, which indicates the end of the element's content. For example, the following HTML
+                        code creates a paragraph element: <br>
+                        <code> &lt;p&gt;  This is a paragraph element. &lt;p&gt;</code>
+                    </li>
+                    <li>Tags: HTML tags are used to define the structure and content of an element. Tags are enclosed in
+                        angle brackets (&lt;&gt;) and come in pairs: an opening tag and a closing tag. The opening tag
+                        includes the name of the element, and the closing tag includes a forward slash (/) before the
+                        element name. Some elements, such as images and line breaks, do not require a closing tag. For
+                        example, the following HTML code creates a bold element: <br>
+                        <code>&lt;<span>b</span>&gt;This text is bold.&lt;/<span>b</span>&gt;
+                        </code>
+                    </li>
+                    <li>Attributes: HTML attributes provide additional information about an element, such as its ID,
+                        class, or source URL. Attributes are included within the opening tag and are written in the
+                        format name="value". For example, the following HTML code creates an image element with a
+                        specified source URL and alt text: <br>
+                        <code>&lt;<span >img</span> <span>src</span>="image<span class="hljs-selector-class">.jpg</span>" alt="<span class="hljs-selector-tag">A</span> beautiful sunset"&gt;
+                        </code>
+                    </li>
+
+                </ol>
+                <p>In summary, elements are the building blocks of HTML documents, tags are used to define the structure
+                    and content of elements, and attributes provide additional information about elements.</p>
+            </div>
+        </section>
+
+        <!--Fourth Question-->
+        <section class="question-answer">
+            <h3 class="question">04. &nbsp; Briefly explain what HTML entities are.</h3>
+            <div class="answer">
+                <p>HTML entities are special characters that are used to represent reserved characters or characters
+                    that are not part of the standard character set in HTML code. They are represented by a string of
+                    characters that starts with an ampersand (<code>&amp;</code>) and ends with a semicolon
+                    (<code>;</code>).
+                </p>
+                <p>For example, the less-than sign (<code>&lt;</code>) is a reserved character in HTML code, and if you
+                    want to use it as a regular character, you need to represent it using the HTML entity
+                    <strong> <u> <code>&amp;lt;</code></u></strong> Similarly, if you want to use non-English characters, like accented letters
+                    or special symbols, in your HTML code, you need to use the corresponding HTML entity to represent
+                    them.
+                </p>
+                <p>Using HTML entities helps ensure that your code is valid and that your content is displayed correctly
+                    in all browsers and devices, regardless of their character encoding settings.
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
