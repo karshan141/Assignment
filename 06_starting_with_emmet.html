@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting With Emmet Assignment</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #e8eaef;
+        }
+
+        .main-header {
+            text-align: center;
+            color: #163f60;
+            padding: 40px;
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-weight: 900;
+            line-height: 54px;
+        }
+
+        #wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            max-width: 1220px;
+            margin: 0 auto;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .question-answer {
+            width: 100%;
+        }
+
+        .question {
+            background-color: #163f60;
+            color: #fff;
+            letter-spacing: 1.2px;
+            font-size: 1.3rem;
+            padding: 20px 50px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .answer {
+            background-color: #fff;
+            padding: 20px 50px;
+        }
+
+        .answer p,
+        .answer li {
+            line-height: 23px;
+            letter-spacing: 0.8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Assignment Heading-->
+    <header class="main-header">
+        <h1>Starting With Emmet Assignment</h1>
+    </header>
+    <div id="wrapper">
+        <!-- First Question-->
+        <section class="question-answer">
+            <h3 class="question">01. &nbsp; What is Emmet?</h3>
+            <div class="answer">
+                <p>Emmet is a powerful plugin for web developers that can greatly increase their productivity when
+                    writing HTML and CSS code. It is a shorthand syntax that allows developers to write code faster by
+                    using abbreviations for commonly used HTML and CSS patterns.</p>
+                <p>With Emmet, developers can use simple abbreviations to quickly generate complex code, such as entire
+                    HTML documents, tables, forms, or CSS styles. For example, typing <b> <code>ul&gt;li*5</code> </b>
+                    in an HTML
+                    file and then hitting the Emmet shortcut key will generate a basic unordered list with five list
+                    items.</p>
+            </div>
+        </section>
+
+        <!--Secound Question-->
+        <section class="question-answer">
+            <h3 class="question">02. &nbsp; What are the advantages of using Emmet.</h3>
+            <div class="answer">
+                <ol>
+                    <li>
+                        <p>Faster coding: Emmet enables developers to write HTML and CSS code much faster by using
+                            shorthand abbreviations for commonly used patterns. This can save a lot of time and reduce
+                            the risk of typing errors.</p>
+                    </li>
+                    <li>
+                        <p>Increased productivity: With Emmet, developers can generate complex code with a few simple
+                            keystrokes. This means they can focus more on the design and functionality of their web
+                            pages, rather than spending time writing repetitive code.</p>
+                    </li>
+                    <li>
+                        <p>Improved code readability: Emmet allows developers to write code in a more concise and
+                            readable way. This can make it easier for other developers to understand and modify the
+                            code, as well as reducing the file size of the HTML and CSS files.</p>
+                    </li>
+                    <li>
+                        <p>Customizable: Emmet can be customized to fit the specific coding preferences of individual
+                            developers. This means that they can create their own custom abbreviations and snippets, as
+                            well as configuring the settings to match their workflow.</p>
+                    </li>
+                    <li>
+                        <p>Cross-editor compatibility: Emmet is supported in many popular text editors and IDEs, which
+                            means that developers can use it across different platforms and environments. This can be
+                            particularly useful for remote collaboration, where multiple developers may be using
+                            different tools.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
