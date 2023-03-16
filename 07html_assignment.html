@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #e8eaef;
+        }
+
+        .main-header {
+            text-align: center;
+            color: #163f60;
+            padding: 40px;
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-weight: 900;
+            line-height: 54px;
+        }
+
+        #wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            max-width: 1220px;
+            margin: 0 auto;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .question-answer {
+            width: 100%;
+        }
+
+        .question {
+            background-color: #163f60;
+            color: #fff;
+            letter-spacing: 1.2px;
+            font-size: 1.3rem;
+            padding: 20px 50px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .answer {
+            background-color: #fff;
+            padding: 20px 50px;
+        }
+
+        .answer p,
+        .answer li {
+            line-height: 23px;
+            letter-spacing: 0.8px;
+            margin-bottom: 10px;
+        }
+
+        .tab {
+            width: 90%;
+            margin: 0 auto;
+            border: 1px solid;
+            /* color: #fff; */
+            font-size: 20px;
+            border-collapse: collapse;
+        }
+
+        .tab tr td,
+        .tab tr th {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Assignment Heading-->
+    <header class="main-header">
+        <h1>HTML Assignment</h1>
+    </header>
+    <div id="wrapper">
+        <!-- First Question-->
+        <section class="question-answer">
+            <h3 class="question">01. &nbsp; what are the inline and block elements in html and difference between them?
+                Name a few inline element and block elements</h3>
+            <div class="answer">
+                <p class="text">Block-level elements are those elements that typically occupy the entire width of their
+                    parent
+                    container and create a new line after the element. <br>
+                    Examples of block-level elements : div, p, ul, li,
+                    header, footer, nav, section, article, and so on.
+                </p>
+
+                <p class="text">Inline elements, on the other hand, are those elements that only take up the necessary
+                    width to
+                    display their content and do not create a new line after the element.<br> Examples of inline
+                    elements : a,
+                    span, img, strong, em, label, input, and so on.
+                </p>
+
+                <p class="text">
+                <h2 class="center" style="color:#fff">Diffrent between block and inline element </h2>
+                <table class="tab">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center">Block Elements</th>
+                            <th style="text-align:center">Inline Elements</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align:center">Block elements always start from a new line.</td>
+                            <td style="text-align:center">Inline elements never start from a new line.</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">Block elements cover space from left to right as far as it can
+                                go.
+                            </td>
+                            <td style="text-align:center">Inline elements only cover the space as bounded by the tags in
+                                the
+                                HTML element.</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">Block elements have top and bottom margins.</td>
+                            <td style="text-align:center">Inline elements don't have a top and bottom margin.</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">Examples of block elements - <span
+                                    class="highlight--red">&lt;p&gt;,&lt;div&gt;,&lt;hr&gt;</span> .</td>
+                            <td style="text-align:center">Examples of inline elements - <span
+                                    class="highlight--red">&lt;span&gt;,&lt;br&gt;</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </p>
+            </div>
+        </section>
+
+        <!--Secound Question-->
+        <section class="question-answer">
+            <h3 class="question">02. &nbsp; How to work with images in html and explain in details &lt;img&gt; tag
+                important attributes.</h3>
+            <div class="answer">
+                <p>Adding images on a webpage: </strong>The &lt;img&gt; tag is used to add or
+                    embed the images to a webpage/website. The “img” tag is an empty tag, which means it can contain
+                    only a list
+                    of attributes and it has no closing tag. The addition of the images improves the quality along with
+                    enhancing the design structure, appearance of the webpage. Nowadays, a website does not directly add
+                    images
+                    to a web page, as the images are linked to web pages by using the &lt;img&gt; tag which holds space
+                    for the
+                    image.&nbsp;</p>
+
+                <ul>
+                    <li>
+                        <p><code>src</code>: This is a required attribute that specifies the source of the image. It can
+                            be a file path or a URL to an image.</p>
+                    </li>
+                    <li>
+                        <p><code>alt</code>: This attribute provides an alternative text description of the image. It is
+                            used when the image cannot be displayed or for users who are using screen readers.</p>
+                    </li>
+                    <li>
+                        <p><code>title</code>: This attribute provides a tooltip that is displayed when the user hovers
+                            over the image.</p>
+                    </li>
+                    <li>
+                        <p><code>width</code> and <code>height</code>: These attributes specify the width and height of
+                            the image in pixels. They can be used to resize the image on the page.</p>
+                    </li>
+                    <li>
+                        <p><code>loading</code>: This attribute is used to control how the image is loaded. It can have
+                            three values: "lazy" to defer loading until the image enters the viewport, "eager" to load
+                            the image immediately, or "auto" to use the browser's default behavior.</p>
+                    </li>
+                    <li>
+                        <p><code>decoding</code>: This attribute is used to control how the image is decoded. It can
+                            have two values: "sync" to decode the image as soon as it is loaded, or "async" to defer
+                            decoding until the image is displayed.</p>
+                    </li>
+                    <!-- <li>
+                        <p><code>srcset</code>: This attribute allows you to specify multiple versions of the same image
+                            with different resolutions or sizes. The browser will select the appropriate version based
+                            on the user's device and screen resolution.</p>
+                    </li> -->
+                    <li>
+                        <p><code>sizes</code>: This attribute is used with the <code>srcset</code> attribute to specify
+                            the sizes of the image on different devices. It can be a list of media queries or a single
+                            value indicating the default size.</p>
+                    </li>
+                    <!-- <li>
+                        <p><code>crossorigin</code>: This attribute is used to indicate that the image should be
+                            requested with CORS (Cross-Origin Resource Sharing) enabled. This is used when the image is
+                            hosted on a different domain than the page it is displayed on.</p>
+                    </li>
+                    <li>
+                        <p><code>usemap</code>: This attribute specifies an image map that is associated with the image.
+                        </p>
+                    </li>
+                    <li>
+                        <p><code>ismap</code>: This attribute is used to indicate that the image is part of an image
+                            map.</p>
+                    </li> -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Third Question-->
+        <section class="question-answer">
+            <h3 class="question">03. &nbsp; How to create lists in HTML?</h3>
+            <div class="answer">
+                <p>In HTML, there are three types of lists: ordered lists, unordered lists, and definition lists. Here
+                    are the steps to create each type of list:</p>
+                <ol>
+
+                    <li>Unordered lists: An unordered list is a list of items that are marked with bullets. To create an
+                        unordered list in HTML, use the <code>&lt;ul&gt;</code> tag and add <code>&lt;li&gt;</code> tags
+                        for each list item. For example:
+                        <br> <br>
+                        <code class="!whitespace-pre hljs language-css">&lt;<span class="hljs-selector-tag">ul</span>&gt;
+                            <br> &lt;li&gt;Item 1&lt;/li&gt;<br>
+                            &lt;li&gt;Item 2&lt;/li&gt;<br>
+                            &lt;li&gt;Item 3&lt;/li&gt;<br>
+                          &lt;/<span class="hljs-selector-tag">ul</span>&gt;
+                          </code>
+                    </li>
+
+                    <li>Ordered lists: An ordered list is a list of items that are numbered. To create an ordered list
+                        in HTML, use the <code>&lt;ol&gt;</code> tag and add <code>&lt;li&gt;</code> tags for each list
+                        item. For example:
+
+                        <br> <br>
+                        <code class="!whitespace-pre hljs language-css">&lt;<span class="hljs-selector-tag">ol</span>&gt;
+                            <br> &lt;li&gt;Item 1&lt;/li&gt;<br>
+                            &lt;li&gt;Item 2&lt;/li&gt;<br>
+                            &lt;li&gt;Item 3&lt;/li&gt;<br>
+                          &lt;/<span class="hljs-selector-tag">ol</span>&gt;
+                          </code>
+                    </li>
+
+                    <li>Definition lists: A definition list is a list of terms and their definitions. To create a
+                        definition
+                        list in HTML, use the <code>&lt;dl&gt;</code> tag and add <code>&lt;dt&gt;</code> tags for each
+                        term
+                        and <code>&lt;dd&gt;</code> tags for each definition. For example: <br><br>
+
+                        <code class="!whitespace-pre hljs language-css">&lt;<span class="hljs-selector-tag">dl</span>&gt; <br>
+                        &lt;<span class="hljs-selector-tag">dt</span>&gt;Term <span class="hljs-number">1</span>&lt;/<span class="hljs-selector-tag">dt</span>&gt; <br>
+                        &lt;<span class="hljs-selector-tag">dd</span>&gt;Definition <span class="hljs-number">1</span>&lt;/<span class="hljs-selector-tag">dd</span>&gt; <br>
+                        &lt;<span class="hljs-selector-tag">dt</span>&gt;Term <span class="hljs-number">2</span>&lt;/<span class="hljs-selector-tag">dt</span>&gt; <br>
+                        &lt;<span class="hljs-selector-tag">dd</span>&gt;Definition <span class="hljs-number">2</span>&lt;/<span class="hljs-selector-tag">dd</span>&gt; <br>
+                        &lt;<span class="hljs-selector-tag">dt</span>&gt;Term <span class="hljs-number">3</span>&lt;/<span class="hljs-selector-tag">dt</span>&gt; <br>
+                        &lt;<span class="hljs-selector-tag">dd</span>&gt;Definition <span class="hljs-number">3</span>&lt;/<span class="hljs-selector-tag">dd</span>&gt; <br>
+                      &lt;/<span class="hljs-selector-tag">dl</span>&gt;
+                      </code>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
